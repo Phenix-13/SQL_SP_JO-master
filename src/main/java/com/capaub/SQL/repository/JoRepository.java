@@ -16,8 +16,8 @@ public class JoRepository {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    public List<Map<String, Object>> callSpJoPaysRankedForYear(int year,String pays) {
-        String sql = "CALL spJoPaysClassement(?,?)";
-        return jdbcTemplate.queryForList(sql, year,pays);
+    public List<Map<String, Object>> callSpJoPaysRankedForYear(int year) {
+        String sql = "CALL spJoPaysClassement(?)";
+        return jdbcTemplate.queryForList(sql, year);
     }
 }

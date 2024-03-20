@@ -16,7 +16,7 @@ public class JoService {
         this.joRepository = joRepository;
     }
 
-    public List<Map<String, Object>> callSpJoPaysRankedForYear(int year,String pays) {
-        return joRepository.callSpJoPaysRankedForYear(year,pays);
+    public List<Map<String, Object>> callSpJoPaysRankedForYear(int year) {
+        return joRepository.callSpJoPaysRankedForYear(year);
     }
 }
